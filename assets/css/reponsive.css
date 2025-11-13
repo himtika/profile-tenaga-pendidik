@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1023px){
+@media only screen and (max-width: 1024px){
 	.main-header .nav-outer .main-menu,
 	.sticky-header{
 		display: none !important;
@@ -50,8 +50,31 @@
 		padding: 24px 0;
 	}
 
-  /* =============== section hero ================ */
-  
+
+  .contact-wrapper {
+    padding: 0 40px !important;
+    max-width: 1200px; /* biar nggak terlalu lebar di tablet */
+  }
+
+  .contact-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 1fr)) !important; /* 2 kolom fix */
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .contact-text h1 {
+    font-size: 2.8em;
+  }
+
+  .contact-text p {
+    font-size: 1.1em;
+  }
+
+  .lecturer-card {
+    padding: 22px 30px;
+  }
+
 
   /* =============== section Footer ================ */
   .footer-text{
@@ -71,32 +94,71 @@
 @media screen and (max-width: 768px) {
   /*================SECTION SAPA-hero================*/
   .hero-section {
-        padding: 0 30px; /* Kurangi padding samping */
-        height: auto; /* Biarkan tinggi menyesuaikan konten */
-        min-height: 140vh;
-    }
+      padding: 0 30px !important; /* Kurangi padding samping */
+      height: auto; /* Biarkan tinggi menyesuaikan konten */
+      min-height: 100vh;
+  }
 
-    .hero-wrapper {
-        flex-direction: column; /* Tumpuk teks dan gambar secara vertikal */
-        margin: 0 !important; /* Hapus margin kiri, tengahkan wrapper */
-        padding: 60px 0; /* Beri padding atas bawah */
-        gap: 40px;
-        text-align: center; /* Tengahkan teks */
-    }
+  .hero-wrapper {
+      flex-direction: column;
+      margin: 0 !important; 
+      padding: 60px 0 0 0 !important; 
+      gap: 40px;
+      text-align: center; /* Tengahkan teks */
+  }
 
-    .hero-text h1,
-    .hero-text p {
-        font-size: 2.5rem !important; /* Kecilkan font */
-    }
+  .hero-text h1,
+  .hero-text p {
+      font-size: 2.5rem !important; /* Kecilkan font */
+  }
 
-    .hero-text p {
-        max-width: none; /* Biarkan lebar penuh */
-    }
+  .hero-text p {
+      max-width: none !important; /* Biarkan lebar penuh */
+  }
 
-    .hero-image img {
-        width: 300px; /* Kecilkan gambar */
-        height: 300px;
-    }
+  .hero-image img {
+      width: 300px !important; /* Kecilkan gambar */
+      height: 300px !important;
+  }
+
+  .contact-section {
+    padding: 0 20px !important;
+  }
+  .contact-wrapper {
+    padding: 0 30px !important;
+  }
+  .contact-card-container {
+    grid-template-columns: 1fr !important; /* 1 kolom di layar kecil */
+    gap: 20px;
+  }
+
+  .contact-text h1 {
+    font-size: 2.3em;
+  }
+
+  .contact-text p {
+    font-size: 1em;
+  }
+
+  .lecturer-card {
+    flex-direction: column; /* avatar & info ditumpuk */
+    align-items: center;
+    text-align: left !important;
+    padding: 25px !important;
+    gap: 0 !important;
+  }
+
+  .lecturer-avatar {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 15px;
+  }
+
+  .lecturer-contact {
+    align-items: flex-start !important;
+  }
+
+
   /* =============== section Footer ================ */
   .footer-text{
     display: flex !important;
