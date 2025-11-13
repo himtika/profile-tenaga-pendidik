@@ -11,9 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 
-particlesJS('particles-js',
-  
-  {
+const particlesConfig = {
   "particles": {
     "number": {
       "value": 2672,
@@ -116,6 +114,14 @@ particlesJS('particles-js',
     }
   },
   "retina_detect": true
+};
+
+// Inisialisasi particles untuk hero section
+if (document.getElementById('particles-hero')) {
+  particlesJS('particles-hero', particlesConfig);
 }
 
-);
+// Inisialisasi particles untuk contact section
+if (document.getElementById('particles-contact')) {
+  particlesJS('particles-contact', particlesConfig);
+}

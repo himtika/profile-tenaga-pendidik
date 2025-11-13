@@ -51,32 +51,6 @@
 	}
 
 
-  .contact-wrapper {
-    padding: 0 40px !important;
-    max-width: 1200px; /* biar nggak terlalu lebar di tablet */
-  }
-
-  .contact-card-container {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(320px, 1fr)) !important; /* 2 kolom fix */
-    justify-content: center;
-    gap: 25px;
-    padding: 0 40px !important;
-  }
-
-  .contact-text h1 {
-    font-size: 2.8em;
-  }
-
-  .contact-text p {
-    font-size: 1.1em;
-  }
-
-  .lecturer-card {
-    padding: 22px 30px;
-  }
-
-
   /* =============== section Footer ================ */
   .footer-text{
         display: flex !important;
@@ -93,73 +67,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  /*================SECTION SAPA-hero================*/
-  .hero-section {
-      padding: 0 30px !important; /* Kurangi padding samping */
-      height: auto; /* Biarkan tinggi menyesuaikan konten */
-      min-height: 100vh;
-  }
-
-  .hero-wrapper {
-      flex-direction: column;
-      margin: 0 !important; 
-      padding: 60px 0 0 0 !important; 
-      gap: 40px;
-      text-align: center; /* Tengahkan teks */
-  }
-
-  .hero-text h1,
-  .hero-text p {
-      font-size: 2.5rem !important; /* Kecilkan font */
-  }
-
-  .hero-text p {
-      max-width: none !important; /* Biarkan lebar penuh */
-  }
-
-  .hero-image img {
-      width: 300px !important; /* Kecilkan gambar */
-      height: 300px !important;
-  }
-
-  .contact-section {
-    padding: 0 20px !important;
-  }
-  .contact-wrapper {
-    padding: 0 30px !important;
-  }
-  .contact-card-container {
-    grid-template-columns: 1fr !important; /* 1 kolom di layar kecil */
-    gap: 20px;
-  }
-
-  .contact-text h1 {
-    font-size: 2.3em;
-  }
-
-  .contact-text p {
-    font-size: 1em;
-  }
-
-  .lecturer-card {
-    flex-direction: column; /* avatar & info ditumpuk */
-    align-items: center;
-    text-align: left !important;
-    padding: 25px !important;
-    gap: 0 !important;
-  }
-
-  .lecturer-avatar {
-    width: 90px;
-    height: 90px;
-    margin-bottom: 15px;
-  }
-
-  .lecturer-contact {
-    align-items: flex-start !important;
-  }
-
-
   /* =============== section Footer ================ */
   .footer-text{
     display: flex !important;
@@ -173,52 +80,6 @@
   .section-3{
     margin-top: -40px !important; 
   }
-}
-@media (max-width: 480px) {
-    /* --- Hero Section --- */
-    .hero-section {
-        padding: 0 20px; /* Kurangi padding samping lagi */
-    }
-    
-    .hero-wrapper {
-        padding: 60px 0; /* Kurangi padding atas bawah */
-    }
-
-    .hero-text h1,
-    .hero-text p {
-        font-size: 2rem; /* Kecilkan font lagi */
-    }
-
-    .hero-image img {
-        width: 250px; /* Kecilkan gambar lagi */
-        height: 250px;
-    }
-
-    /* --- Contact Section --- */
-    .contact-text h1 {
-        font-size: 2em; /* Kecilkan font judul */
-    }
-
-    .contact-text p {
-        font-size: 1em;
-    }
-
-    /* Ini adalah bagian penting untuk kartu di layar HP:
-      Mengubah tata letak di DALAM kartu
-    */
-    .lecturer-card {
-        flex-direction: column; /* Tumpuk avatar dan info secara vertikal */
-        text-align: center; /* Tengahkan teks di dalam kartu */
-    }
-
-    .lecturer-avatar {
-        margin-bottom: 15px; /* Beri jarak antara avatar dan info */
-    }
-
-    .lecturer-contact {
-        /* Pusatkan grup ikon kontak */
-        align-items: center; 
-    }
 }
 
 @media only screen and (min-width: 768px){

@@ -11,9 +11,8 @@ body {
   padding: 0;
   background-color: #252642;
 }
-::-webkit-scrollbar {
-  display: none;
-}
+body::-webkit-scrollbar { display: none; }
+.iframe-dosen::-webkit-scrollbar { display: block; }
 
 .auto-container{
 	position:static;
@@ -732,213 +731,31 @@ body {
 }
 
 /*================ SECTION Hero ================*/
-/* Container utama */
 .home-container {
   position: relative;
   width: 100%;
-  min-height: 100vh; 
-  overflow: hidden;
-  color: white;
-  text-align: left;
+  overflow: visible; /* jangan hidden */
+  padding: 0;
+  margin: 0;
 }
 
-/* Background partikel */
 .particles-background {
-  position: absolute;
+  position: fixed; /* biar full screen */
   inset: 0;
   z-index: 0;
+  pointer-events: none; /* biar klik dan scroll tetap ke iframe */
 }
 
-/* Section konten */
-.hero-section {
+.iframe-dosen {
+  width: 100%;
+  min-height: 800px; /* default height */
+  border: none;
+  display: block;
   position: relative;
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 0 60px;
+  z-index: 1;
+  
 }
 
-/* Wrapper konten utama */
-.hero-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1400px;
-  margin: 0 auto 0 80px;
-  gap: 20px;
-}
-
-/* Area teks kiri */
-.hero-text {
-  flex: 1;
-}
-
-.hero-text h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.hero-text p {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.1;
-  max-width: 400px;
-  background: linear-gradient(180deg, #D5AF34, #E8D09E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Gambar kanan */
-.hero-image {
-	flex: 1;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.hero-image img {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  object-fit: cover;
-  filter: drop-shadow(8px 8px 15px rgba(255,255,255,0.3));
-}
-
-/* =============== section contact ================ */
-.contact-section {
-  position: relative;
-  min-height: 100vh;
-  padding: 80px 20px;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 1800px; /* diperbesar agar grid lebih luas */
-  margin: 0 auto;
-  padding: 0 100px;
-}
-
-.contact-text {
-  text-align: center;
-  margin-bottom: 40px;
-  padding: 0 20px;
-}
-
-.contact-text h1 {
-  font-size: 3.5em;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #fff;
-}
-
-.contact-text h1 .highlight {
-  background: linear-gradient(90deg, #D5AF34, #E8D09E);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.contact-text p {
-  font-size: 1.2em;
-  line-height: 1.5;
-  color: #ccc;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Grid 3 kolom panjang */
-.contact-card-container {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(450px, 1fr)); /* dari 380 → 450px */
-  gap: 30px;
-  justify-content: center;
-  width: 100%;
-  max-width: 1600px;
-  padding: 0 60px; /* padding kanan kiri ekstra untuk desktop */
-  box-sizing: border-box;/* diperbesar biar 3 card muat lebih lebar */
-}
-
-/* Card */
-.lecturer-card {
-  background-color: #2a2c41;
-  border-radius: 15px;
-  padding: 25px 35px; /* tambah padding agar isi lega */
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  min-height: 120px; /* tinggi seragam */
-}
-
-.lecturer-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
-}
-
-/* Avatar & isi */
-.lecturer-avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #4a4d6b;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-
-.lecturer-info {
-  flex-grow: 1;
-}
-
-.lecturer-info h3 {
-  margin: 0;
-  font-size: 1.4em;
-  color: #fff;
-  font-weight: bold;
-}
-
-.lecturer-info p {
-  margin: 5px 0 0;
-  font-size: 0.9em;
-  color: #a0a3c9;
-}
-
-/* Kontak */
-.lecturer-contact {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.lecturer-contact div {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  color: #a0a3c9;
-  font-size: 0.9em;
-  flex-wrap: nowrap;
-}
-
-.lecturer-contact svg {
-  width: 16px;
-  height: 16px;
-  fill: #a0a3c9;
-}
 
 /* =============== section Footer ================ */
 footer {

@@ -121,3 +121,19 @@ document.addEventListener("dragstart", function (event) {
 document.querySelectorAll("img").forEach(img => {
     img.addEventListener("contextmenu", event => event.preventDefault());
 });
+
+
+const iframe = document.getElementById("dosenFrame");
+
+iframe.onload = function () {
+  try {
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    iframe.style.height = doc.body.scrollHeight + "px";
+  } catch (err) {
+    console.warn(
+      "Tidak bisa akses konten iframe (cross-origin), gunakan scroll default:",
+      err
+    );
+    iframe.style.height = "800px"; // fallback
+  }
+};

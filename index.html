@@ -118,34 +118,19 @@
     </header>
     <!-- End Main Header -->
 
-    <div id="home" class="home-container">
-        <!-- Background Particles -->
-        <div id="particles-js" class="particles-background"></div>
-
-        <!-- Konten -->
-        <section class="hero-section">
-            <div class="hero-wrapper">
-                <div class="hero-text">
-                    <h1>Meet Our Innovators</h1>
-                    <p>At Informatics Faculty </p>
-                </div>
-                <div class="hero-image">
-                    <img src="assets/images/lecturer.png" alt="lecturer">
-                </div>
-            </div>
-        </section>
-
-        <section class="contact-section">
-            <div class="contact-wrapper">
-                <div class="contact-text">
-                    <h1>Our <span class="highlight">Lecturer</span></h1>
-                    <p>Pengajar yang tak kenal lelah, mencetak lulusan informatika unggulan.</p>
-                </div>
-                <div class="contact-card-container">
-                </div>
-            </div>
-        </section>
-    </div>
+    <!-- Main Section -->
+    <main>
+        <div id="home" class="home-container">
+            <!-- Iframe dengan scroll di dalamnya -->
+            <iframe 
+                src="partials/dosen.html" 
+                id="dosenFrame"
+                class="iframe-dosen"
+                frameborder="0"
+                scrolling="auto">
+            </iframe>
+        </div>
+    </main>
 
     <!----Start Footer-->
        <footer>
@@ -208,10 +193,10 @@
 
     <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="gparticles.min.js.download"></script>
-    <script src="gparticles-app.js.download"></script>
     
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/gparticles.min.js"></script>
+    <script src="assets/js/gparticles-app.js"></script>
+    
     <script src="assets/js/jquery.js"></script>
     <script src="assets/js/scrollbar.js"></script>
     <script src="assets/js/script.js"></script>
