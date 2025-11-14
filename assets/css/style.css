@@ -730,25 +730,18 @@ body::-webkit-scrollbar { display: none; }
 	color: #7A25AE;	
 }
 
-/*================ SECTION Hero ================*/
+/*================ SECTION MAIN ================*/
 .home-container {
   position: relative;
   width: 100%;
-  overflow: visible; /* jangan hidden */
+  overflow: visible; 
   padding: 0;
   margin: 0;
 }
 
-.particles-background {
-  position: fixed; /* biar full screen */
-  inset: 0;
-  z-index: 0;
-  pointer-events: none; /* biar klik dan scroll tetap ke iframe */
-}
-
 .iframe-dosen {
   width: 100%;
-  min-height: 800px; /* default height */
+  min-height: 800px; 
   border: none;
   display: block;
   position: relative;

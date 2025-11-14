@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body::-webkit-scrollbar {
@@ -39,10 +39,13 @@
                 class="w-60 sm:w-72 md:w-96 lg:w-[28rem] drop-shadow-[8px_8px_6px_rgba(255,255,255,0.3)]">
         </div>
     </section>
-
+    
     <!-- ========== CONTACT SECTION ========== -->
     <section id="contact" class="relative min-h-[80vh] flex flex-col items-center bg-[#1e2039] text-white px-6 md:px-12 lg:px-20 py-16 overflow-hidden">
-
+        
+        <!-- Background Particles -->
+        <div id="particles-contact" class="absolute inset-0 z-0"></div>
+        
         <div class="text-center mb-12 relative z-10">
             <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Our <span class="bg-gradient-to-r from-yellow-500 to-yellow-200 bg-clip-text text-transparent">Lecturers</span>
@@ -58,12 +61,10 @@
             <!-- JS akan inject data dosen di sini -->
         </div>
 
-        <!-- Background Particles -->
-        <div id="particles-contact" class="absolute inset-0 z-0"></div>
     </section>
 
     <script src="../assets/js/gparticles.min.js"></script>
     <script src="../assets/js/gparticles-app.js"></script>
-    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/dosen.js"></script>
   </body>
 </html>
