@@ -11,6 +11,7 @@ body {
   padding: 0;
   background-color: #252642;
 }
+
 body::-webkit-scrollbar { display: none; }
 .iframe-dosen::-webkit-scrollbar { display: block; }
 
@@ -54,6 +55,10 @@ body::-webkit-scrollbar { display: none; }
 	background-position:center center; 
 	background-repeat:no-repeat; 
 	background-image:url(../images/icon/gear\ full\ 9.svg);
+
+	/* GANTI INI: Pakai Pixel biar anteng pas browser ditarik */
+    background-size: 974px auto;
+
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
@@ -73,12 +78,14 @@ body::-webkit-scrollbar { display: none; }
 	background-position:center center; 
 	background-repeat:no-repeat; 
 	background-image:url(../images/icon/rebuild\ tanpa\ gear.svg);
+	/* GANTI INI: Pakai Pixel juga biar sinkron */
+    background-size: 397px auto;
 	-webkit-transition: all 200ms ease;
 	-moz-transition: all 200ms ease;
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
-	margin-left: 8px;
+	margin-left: 34px;
 } 
 
 .page-loaded .preloader .icon,
@@ -118,7 +125,7 @@ body::-webkit-scrollbar { display: none; }
 	top:0;
 	width:100%;
 	height:100%;
-	background:#252742;
+	background: linear-gradient(to right, #0F1E1C, #1e3d39);
 	z-index:2; 
 	-webkit-transform:translateX(101%);
 	-ms-transform:translateX(101%);

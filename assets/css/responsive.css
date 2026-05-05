@@ -1,4 +1,23 @@
+@media only screen and (max-width: 1480px){
+	.preloader .icon {
+        background-size: 674px auto;
+    }
+    .preloader .other-icon {
+        background-size: 277px auto;
+        margin-left: 24px;
+    }
+}
+
+
 @media only screen and (max-width: 1024px){
+	.preloader .icon {
+        background-size: 572px auto;
+    }
+    .preloader .other-icon {
+        background-size: 237px auto;
+        margin-left: 21px;
+    }
+	
 	.main-header .nav-outer .main-menu,
 	.sticky-header{
 		display: none !important;
@@ -80,6 +99,16 @@
   .section-3{
     margin-top: -40px !important; 
   }
+}
+
+@media only screen and (max-width: 768px){
+	.preloader .icon {
+        background-size: 402px auto;
+    }
+    .preloader .other-icon {
+        background-size: 164px auto;
+        margin-left: 14px;
+    }
 }
 
 @media only screen and (min-width: 768px){
